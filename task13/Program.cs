@@ -7,6 +7,8 @@
 32679 -> 6
 */
 
+/* 1 Ваиант
+
 Console.Write("Введи число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string numberText = Convert.ToString(number);
@@ -19,7 +21,25 @@ else
 {
   Console.WriteLine("-> третьей цифры нет");
 }
+*/
 
+// 2 вариант
+
+Console.Write("Введи число: ");
+int digit = Convert.ToInt32(Console.ReadLine());
+string str = digit +"" ;
+
+char[] massiv = str.ToCharArray();
+
+if(massiv.Length ==0)
+{
+    Console.Write("Тртья цифра");
+}
+else
+{
+    Console.Write(massiv[2]);
+    
+}
 
 
 
